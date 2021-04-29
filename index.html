@@ -1,5 +1,16 @@
 <html>
   <body>
-    <h1>12312</h1>
+    <h1>Agent:</h1>
+    <div id="agent1">
+       loading 
+    </div>      
   </body>
+  <script>
+       var checkIsValidBrowser = function() {
+        // if android
+        var UserAgent = navigator.userAgent.toLowerCase();
+        document.getElementById("agent1").innerText=UserAgent
+        return true;
+      }
+  </script>
 </html>
